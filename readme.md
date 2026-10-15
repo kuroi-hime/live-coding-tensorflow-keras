@@ -22,21 +22,28 @@ pip install tensorflow numpy matplotlib scikit-learn
 ```
 
 ## étapes
-1. Charger et explorer les images:
+1. **Charger et explorer les images:**
 On utilisera image_dataset_from_directory, qui charge les images depuis le dossier data et attribue automatiquement les labels à partir des noms de classes.
 puis afficher quelques images pour vérifier les données.
 
-Objectifs :
+**Objectifs :**
 - Charger et explorer le dataset.
 - Identifier les entrées X (images) et la cible y (classes).
 - Séparer les données en entraînement et en test.
 - Préparer les images pour l'apprentissage.
 
-2. Construction du modèle:
+2. **Construction du modèle:**
 On construit un CNN simple avec des couches Dense pour la classification finale, conformément à l'objectif de créer un premier réseau de neurones.
 
-Objectifs :
+**Objectifs :**
 - Construction d'un réseau (CNN) avec des couches Con2D et Dense.
 - Choix des fonctions d’activation adaptées (dans notre cas ReLU, SoftMax pour la couche de sortie).
 - Définition de la couche de sortie avec 4 sorties.
 - Compilation de modèle avec un optimiseur(adam) et une fonction de perte(sparse_categorical_crossentropy).
+
+**Architecture :**
+- Conv2D extrait des caractéristiques visuelles des images.
+- MaxPooling2D réduit la taille des représentations.
+- Flatten transforme les caractéristiques en vecteur.
+- Dense apprend à associer ces caractéristiques aux classes.
+- softmax produit une probabilité pour chaque classe.
