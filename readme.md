@@ -47,3 +47,7 @@ On construit un CNN simple avec des couches Dense pour la classification finale,
 - Flatten transforme les caractéristiques en vecteur.
 - Dense apprend à associer ces caractéristiques aux classes.
 - softmax produit une probabilité pour chaque classe.
+
+3. **Entraînement:**
+- epochs=10 : nombre maximal de passages sur les données d'entraînement.
+- batch_size=32 : nombre d'images traitées par lot. Ici, la taille des lots est déjà définie lors du chargement du dataset.
