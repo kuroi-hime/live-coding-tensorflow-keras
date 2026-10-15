@@ -1,2 +1,9 @@
+# env virtuel
 .venv
+
+# data pour entraînement et validation
 data
+
+# Images de test
+Tr-no_1594.jpg
+Tr-pi_1456.jpg
