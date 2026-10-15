@@ -51,3 +51,10 @@ On construit un CNN simple avec des couches Dense pour la classification finale,
 3. **Entraînement:**
 - epochs=10 : nombre maximal de passages sur les données d'entraînement.
 - batch_size=32 : nombre d'images traitées par lot. Ici, la taille des lots est déjà définie lors du chargement du dataset.
+
+4. **Évaluation:**
+Cette partie passe par:
+- Évaluation du modèle sur les données de test.
+- Visualisation des courbes d’apprentissage.
+- Identification d'un éventuel overfitting ou underfitting si existant.
+- Réalisation d'une prédiction sur une nouvelle donnée.
