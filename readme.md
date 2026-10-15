@@ -31,3 +31,12 @@ Objectifs :
 - Identifier les entrées X (images) et la cible y (classes).
 - Séparer les données en entraînement et en test.
 - Préparer les images pour l'apprentissage.
+
+2. Construction du modèle:
+On construit un CNN simple avec des couches Dense pour la classification finale, conformément à l'objectif de créer un premier réseau de neurones.
+
+Objectifs :
+- Construction d'un réseau (CNN) avec des couches Con2D et Dense.
+- Choix des fonctions d’activation adaptées (dans notre cas ReLU, SoftMax pour la couche de sortie).
+- Définition de la couche de sortie avec 4 sorties.
+- Compilation de modèle avec un optimiseur(adam) et une fonction de perte(sparse_categorical_crossentropy).
